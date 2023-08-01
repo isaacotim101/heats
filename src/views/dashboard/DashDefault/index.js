@@ -23,23 +23,23 @@ const DashDefault = () => {
   const [teamLength, setOutTeamLength] = useState('');
 
   function getnewsLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/blogs');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/blogs');
   }
   function getsuccessLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/success');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/success');
   }
   
   function getprojectsLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/projects');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/projects');
   }
   function getgalleryLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/gallerys');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/gallerys');
   }
     function getcampaignsLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/campaigns');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/campaigns');
   }
   function getteamLength() {
-    return axios.get('https:african-hearts-api.vercel.app/api/v1/teams');
+    return axios.get('https://african-hearts-api.vercel.app/api/v1/teams');
   }
   
   Promise.all([getnewsLength(), getsuccessLength(), getprojectsLength(), getgalleryLength(), getcampaignsLength(), getteamLength() ])
