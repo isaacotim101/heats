@@ -2,6 +2,12 @@
 import React, { useState } from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Leader from '../../../assets/images/leader.png';
+import Donation from '../../../assets/images/donation.png';
+import Gallery from '../../../assets/images/gallery.png';
+import Growth from '../../../assets/images/growth.png';
+import Briefing from '../../../assets/images/briefing.png';
+import Newsletter from '../../../assets/images/newsletter.png';
 //import { useFetch } from "../../../hooks/useSWR";
 import axios from 'axios';
 const DashDefault = () => {
@@ -66,7 +72,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686775714/newsletter_qagap7.png' width="30%" />
+                  <img alt='img' src={Newsletter} width="30%" />
                   {newsLength} Articles
                   </h3>
                 </div>
@@ -94,7 +100,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686775714/donation_nhxr7u.png' width="30%" />
+                  <img alt='img' src={Donation} width="30%" />
                     {campaignsLength} Campaigns
                   </h3>
                 </div>
@@ -122,7 +128,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686775717/growth_yoo01v.png' width="30%" />{successLength} Stories
+                  <img alt='img' src={Growth} width="30%" />{successLength} Stories
                   </h3>
                 </div>
               </div>
@@ -148,7 +154,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686775714/briefing_jppxon.png' width="30%" />{projectsLength} Projects
+                  <img alt='img' src={Briefing} width="30%" />{projectsLength} Projects
                   </h3>
                 </div>
               </div>
@@ -174,7 +180,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686776200/gallery_ikb4ll.png' width="30%" />{galleryLength} Images
+                  <img alt='img' src={Gallery} width="30%" />{galleryLength} Images
                   </h3>
                 </div>
               </div>
@@ -200,7 +206,7 @@ const DashDefault = () => {
               <div className="row d-flex align-items-center">
                 <div className="col-9">
                   <h3 className="f-w-300 d-flex align-items-center m-b-0">
-                  <img alt='img' src='https:res.cloudinary.com/dw90vkmoc/image/upload/v1686775718/leader_neajdw.png' width="30%" />{teamLength} Staff
+                  <img alt='img' src={Leader} width="30%" />{teamLength} Staff
                   </h3>
                 </div>
               </div>
